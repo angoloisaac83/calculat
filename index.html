@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="w-full h-[100vh] font-sans flex items-center justify-center bg-[whitesmoke]">
+    <section class="w-[40%] smd:w-[61%] mdd:w-[70%] smm:w-[90%] pb-[30px] h-fit flex flex-col gap-[10px] rounded-xl br bg-white">
+        <div class="pt-[30px] smm:flex flex-col smm:pl-[0px] items-center justify-center pl-[50px]">
+            <ul id="ul" class="flex smm:w-[90%] mdd:w-[95%] w-[65%] justify-between ">
+                <li>DAY</li>
+                <li>MONTH</li>
+                <li>YEAR</li>
+            </ul>
+            <ul class="flex smm:w-[90%] mdd:w-[95%] w-[65%] justify-between ">
+                <input id="day" class="w-[23%] text-black font-bold text-[22px] focus:border-[#854dff] focus:outline-[#854dff] pl-[13px] border-[1.5px] border-[gray] placeholder:text-center placeholder:pt-[10px] py-[4px] rounded-md placeholder:text-2xl placeholder:font-semibold" placeholder="DD" type="number">
+                <input id="month" class="w-[23%] text-black font-bold text-[22px] focus:border-[#854dff] focus:outline-[#854dff] pl-[13px] border-[1.5px] border-[gray] placeholder:text-center placeholder:pt-[10px] py-[4px] rounded-md placeholder:text-2xl placeholder:font-semibold" placeholder="MM" type="number">
+                <input id="year" class="w-[23%] text-black font-bold text-[22px] focus:border-[#854dff] focus:outline-[#854dff] pl-[13px] border-[1.5px] border-[gray] placeholder:text-center placeholder:pt-[10px] py-[4px] rounded-md placeholder:text-2xl placeholder:font-semibold" placeholder="YY" type="number">
+            </ul>
+            <ul class="flex smm:px-[20px] w-[90%] smm:w-full smm:m-auto smm:items-center smm:justify-center items-center justify-center pt-[10px] gap-[15px] m-auto">
+                <hr class="w-[85%] smm:w-[40%] border-none h-[1px] bg-[gray]">
+                <button id="set" class="w-[55px]  myButton h-[55px] text-white bg-black rounded-full flex items-center justify-center"><img class="h-[25px] w-[40px]" src="/assets/images/icon-arrow.svg">
+                </button>
+                    <hr class="w-[85%] hidden smm:flex smm:w-[40%] border-none h-[1px] bg-[gray]">
+            </ul>
+        </div>
+        <div class="flex pl-[50px] smm:text-5xl flex-col text-6xl text-[#854dff] font-bold">
+            <span class="flex items-center justify-center w-fit">
+                 <p id="years">--</p>
+                <span class="text-black">years</span>
+            </span>
+            <span class="flex items-center justify-center w-fit">
+                <p id="months">--</p>
+                <span class="text-black">months</span>
+            </span>
+            <span class="flex items-center justify-center w-fit">
+                <p id="days">--</p>
+                <span class="text-black">days</span>
+            </span>
+        </div>
+    </section>
+    <script src="/srcipt.js"></script>
+</body>
+</html>

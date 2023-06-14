@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    /* font-family: 'Poppins', sans-serif; */
+}
+.br{
+    border-radius: 20px 20px 140px 20px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.04);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.myButton {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .myButton:active{
+    animation-name: purpleBackground;
+  }
+  .myButton:hover{
+    animation-name: purpleBackground;
+  }
+  @keyframes purpleBackground {
+    from { background-color: black; }
+    to { background-color: #854dff; }
+  }
+  
